@@ -1,0 +1,166 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    background-image: url('./assets/image-hero-desktop.webp');
+    background-repeat: no-repeat;
+    background-position: top -200px right -400px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+nav{
+    padding: 24px 165px 24px 165px;
+    box-sizing: border-box;
+}
+nav p, footer p{
+    font-size: 36px;
+}
+button{
+    background-color: #13183F;
+    color: #FFFFFF;
+    border-radius: 28px;
+    max-width: 168px;
+    padding: 0px 30px 0px 30px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0px;
+}
+#header-button{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+header{
+    width: 100%;
+    padding-left: 165px;
+    margin-top: 80px;
+}
+header > div{
+    max-width: 460px;    
+}
+header div h1{
+    font-size: 56px;
+}
+header .about{
+    padding: 30px 30px 30px 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+.bold{
+    font-weight: 800;
+}
+.medium{
+    font-size: 18px;
+    color: #83869A;
+}
+
+
+main{
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#unic{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    padding: 64px 32px 128px 32px;
+}
+#unic p{
+    font-size: 32px;
+    color: white;
+}
+
+.card{
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    padding: 64px 32px 40px 32px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-top: 40px;
+    border: 0px;
+}
+.card img{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    margin-top: -90px;
+}
+
+.card a{
+    color: #F74780;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #13183F;
+    padding: 32px 165px 32px 165px;
+    box-sizing: border-box;
+    margin-top: 140px;
+}
+footer button{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+button:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+a:hover{
+    color: #FFA7C3;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    nav, footer{
+        padding: 31px 39px 31px 39px;
+    }
+    header{
+        padding-left: 39px;
+    }
+    header div h1{
+        font-size: 40px;
+    }
+    header p{
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width : 970px){
+    body{
+        background-image: url("./assets/image-hero-tablet.webp");
+        background-position: top -40px right -300px;
+    }
+}
+
+@media only screen and (max-width : 376px){
+    body{
+        background-image: url('./assets/image-hero-mobile.webp');
+        background-position: center 20%
+    }
+    #unic{
+        height: 120px;
+        padding: 24px 29px 32px 28px;
+    }
+    #unic p{
+        font-size: 24px;
+    }
+    main{
+        margin-top: 350px;
+    }
+}
